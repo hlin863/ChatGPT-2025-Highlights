@@ -169,7 +169,10 @@ button:hover {
 #slide-awards .card {
     max-height: 80vh;
     overflow-y: auto;
-    padding-right: 1rem;
+    padding: 2rem 2.5rem 2rem 3rem;
+    /* left padding larger for alignment */
+    scrollbar-gutter: stable;
+    /* prevents layout shift */
 }
 
 /* IMPROVED TYPOGRAPHY SYSTEM (Spotify-inspired) */
@@ -204,4 +207,28 @@ h1 {
 .award-card {
     text-align: left;
     padding: 1.2rem 1.5rem;
+}
+
+/* Smooth Spotify-style scrollbar for Awards panel */
+#slide-awards .card::-webkit-scrollbar {
+    width: 8px;
+}
+
+#slide-awards .card::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+}
+
+#slide-awards .card::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+#slide-awards .card::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.35);
+}
+
+#awards-container {
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
 }
