@@ -1,0 +1,140 @@
+/* GLOBAL RESET */
+body,
+html {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+/* SLIDE CONTAINER */
+.slide {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    transition: transform 0.8s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5vw;
+    box-sizing: border-box;
+}
+
+/* CENTERED CONTENT BLOCK */
+.content {
+    text-align: center;
+    max-width: 80%;
+}
+
+/* SPOTIFY STYLE TITLES */
+.slide h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.slide h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* SUBTLE BODY TEXT */
+.slide p,
+li {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin: 0.5rem 0;
+}
+
+/* GRADIENT THEMES (Spotify-like) */
+#slide-intro {
+    background: linear-gradient(135deg, #ff007a, #7a00ff);
+}
+
+#slide-summary {
+    background: linear-gradient(135deg, #0099ff, #003cff);
+}
+
+#slide-themes {
+    background: linear-gradient(135deg, #ffb199, #ff0844);
+}
+
+#slide-awards {
+    background: linear-gradient(135deg, #ffcc33, #ff9933);
+}
+
+#slide-highlights {
+    background: linear-gradient(135deg, #ffe259, #ffa751);
+}
+
+#slide-insights {
+    background: linear-gradient(135deg, #292E49, #536976);
+    color: white;
+}
+
+#slide-funny,
+#slide-usage {
+    background: #ffffff;
+}
+
+#slide-outro {
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+    color: white;
+}
+
+/* CONTENT CARD (Spotify style panels) */
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 2rem 3rem;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    width: 70%;
+    margin: auto;
+}
+
+.award-card {
+    background: rgba(255, 255, 255, 0.25);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 18px;
+    backdrop-filter: blur(20px);
+    font-size: 1.4rem;
+}
+
+/* LIST STYLING */
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    padding: 0.4rem 0;
+    font-weight: 500;
+}
+
+/* NAV ARROWS */
+#nav-arrows {
+    position: fixed;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    pointer-events: none;
+}
+
+.nav-btn {
+    pointer-events: auto;
+    background: rgba(255, 255, 255, 0.6);
+    border: none;
+    font-size: 3rem;
+    padding: 10px 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-btn:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: scale(1.1);
+}

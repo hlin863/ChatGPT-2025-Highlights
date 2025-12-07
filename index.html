@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ADD THIS LINE -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>ChatGPT Wrapped 2025</title>
+</head>
+
+<body>
+    <div id="wrapped-container">
+
+        <!-- Slide 1: Intro -->
+        <section class="slide" id="slide-intro">
+            <div class="content center">
+                <h1 class="title">Your ChatGPT Wrapped</h1>
+                <h2 class="subtitle">2025 Edition</h2>
+                <button id="start-btn">Start</button>
+            </div>
+        </section>
+
+        <!-- Slide 2: Year Summary -->
+        <section class="slide" id="slide-summary">
+            <div class="card">
+                <h1>You had an extraordinary year.</h1>
+                <p>Messages exchanged: <span id="msg-count"></span></p>
+                <p>Average depth: <span id="avg-depth"></span></p>
+                <p>Primary style: <span id="primary-style"></span></p>
+            </div>
+        </section>
+
+        <!-- Slide 3: Top Themes -->
+        <section class="slide" id="slide-themes">
+            <div class="card">
+                <h1>Your Top Themes</h1>
+                <ul id="theme-list"></ul>
+            </div>
+        </section>
+
+        <!-- Slide 4: Awards -->
+        <section class="slide" id="slide-awards">
+            <div class="card">
+                <h1>Awards of the Year</h1>
+                <div id="awards-container"></div>
+            </div>
+        </section>
+
+        <!-- Slide 5: Highlights -->
+        <section class="slide" id="slide-highlights">
+            <h1>Highlight Moments</h1>
+            <div id="highlight-list"></div>
+        </section>
+
+        <!-- Slide 6: Model Behaviour Insights -->
+        <section class="slide" id="slide-insights">
+            <h1>You Asked Deep Questions</h1>
+            <p id="insight-text"></p>
+        </section>
+
+        <!-- Slide 7: Usage Patterns -->
+        <section class="slide" id="slide-usage">
+            <h1>Your Usage Patterns</h1>
+            <canvas id="usage-chart"></canvas>
+        </section>
+
+        <!-- Slide 8: Funniest Moments -->
+        <section class="slide" id="slide-funny">
+            <h1>You Made ChatGPT Lose It</h1>
+            <p id="funny-moment"></p>
+        </section>
+
+        <!-- Slide 9: Outro -->
+        <section class="slide" id="slide-outro">
+            <div class="content center">
+                <h1>Thanks for an amazing year.</h1>
+                <button id="restart-btn">Replay</button>
+                <button id="share-btn">Share</button>
+            </div>
+        </section>
+
+    </div>
+
+    <div id="nav-arrows">
+        <button id="left-arrow" class="nav-btn">&#10094;</button>
+        <button id="right-arrow" class="nav-btn">&#10095;</button>
+    </div>
+
+    <script src="js/wrappedData.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
